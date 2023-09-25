@@ -291,61 +291,59 @@ main {
 }
 
 @media screen and (min-width: 1200px) {
+  header > div > img,
+  header > div,
+  nav > ul,
+  header > div > p,
+  nav {
+    display: inline-block;
+  }
+
+  header > div > p {
+    width: 30em;
+    padding-left: 2em;
+  }
+
   header {
-    height: 10em;
-    padding-left: 4em;
-    display: flex;
-    justify-content: space-between;
+    text-align: left;
   }
-  header div img {
-    display: inline;
-    width: 50em;
-    margin-left: 0;
-    margin: 0;
-    padding-right: 2em;
-    padding-bottom: 5em;
-    margin-top: -1em;
-    margin-left: -3em;
+  nav > ul {
+    width: 39em;
+    text-align: end;
   }
-  header div {
-    width: 70rem;
-    display: flex;
-    justify-content: center;
-    padding-left: 3em;
-    margin-left: 1em;
+
+  nav {
+    vertical-align: top;
+    padding-top: 1.4em;
+  }
+
+  header > div > img,
+  header > div > p {
+    margin-bottom: 0;
+  }
+
+  header div p {
+    vertical-align: top;
     padding-top: 2em;
   }
-  header div p {
-    display: inline;
-    margin-bottom: 0;
-    margin-top: 0;
-    /* width: 35rem; */
-  }
-  nav {
-    display: inline;
-  }
+
   h1 {
     font-size: 3.7em;
   }
-  nav ul {
-    /* padding-left: 25rem; */
-    margin-right: 0;
-  }
+
   nav ul li {
     padding: 0 0.3em;
     padding-top: 1.2em;
   }
   iframe {
     width: 50%;
-    display: inline;
+    display: inline-block;
     height: 20em;
   }
   article section {
-    /* width: 50%; */
+    width: 48%;
     display: inline-block;
     border-radius: 1.3em;
-    width: 40em;
-    margin-top: 0;
     position: absolute;
     height: 20em;
   }
@@ -354,13 +352,11 @@ main {
     padding-left: 1em;
   }
 
-  aside {
-  }
-
   aside div {
-    /* display: inline; */
+    display: inline-block;
     width: 35rem;
-    display: flex;
+    width: 33.333%;
+    margin-inline: -2px;
   }
   footer {
     padding: 1em 7em;
